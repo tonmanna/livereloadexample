@@ -1,7 +1,7 @@
 const { src, dest, series, task, watch, parallel } = require("gulp");
 const babel = require("gulp-babel");
 var ts = require("gulp-typescript");
-const livereload = require("gulp-livereload");
+const livereload = require("gulp-livereload-event-onchange");
 var tsProject = ts.createProject("tsconfig.json");
 
 function watchTask() {
