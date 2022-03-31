@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "browser-sync":"cd dist && browser-sync start --server --files \"./**/*.*\"",
+    "browser-sync": "cd dist && browser-sync start --output --files \"./**/*.*\"",
     "dev": "run-p browser-sync gulp"
   },
   "author": "",
@@ -13,11 +13,14 @@
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-livereload": "^4.0.2",
+    "gulp-livereload-event-onchange": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "tiny-lr": "^2.0.0",
-    "browser-sync": "^2.27.9"
+    "tiny-lr": "^2.0.0"
+  },
+  "dependencies": {
+    "connect-livereload": "^0.6.1"
   }
 }
